@@ -1,5 +1,13 @@
+import { useRouter } from "next/router";
 
 const NotFountPage = () => {
+
+  const router = useRouter()
+
+  setTimeout(()=>{
+    router.push("/")
+  },5000)
+
   return (
     <div>
       <img
